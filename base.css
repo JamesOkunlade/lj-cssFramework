@@ -1,0 +1,317 @@
+/* ---------------------------JAAD CSS GRID FRAMEWORK--------------------------------*/
+/*-------------------- MAIN AUTHORS
+  lADE James
+  ADNAN Afsari
+  -----------------------------*/
+/*-------------------- REFERENCED AUTHORS
+  ERIC Meyer
+  -----------------------------*/
+
+
+/* ----------------- CSS RESET ENDS ----------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ----------------- CSS RESET ENDS ----------------------- */
+
+div, nav {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Circular', Roboto, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #484848;
+  font-size: 100%;
+}
+img {
+	width: 100%;
+}
+h1 {
+  font-family: inherit;
+  font-size: 4.286em;
+  font-weight: 900;
+  line-height: 1.04;
+  color: #3333;
+}
+
+h2 {
+  font-size: 2.857em;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+h3 {
+  font-size: 1.714em;
+  font-weight: 800;
+  line-height: 1.25em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+h4 {
+  font-size: 1.143em;
+  font-weight: 500;
+  line-height: 22px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: #008489;
+}
+
+
+
+
+.lj-container {
+	width: 100%;
+	padding: 0.01em 16px
+}
+.lj-margin {
+	margin: 8px;
+}
+.lj-margin-top {
+	margin-top: 8px;
+}
+
+.lj-row-padding, .lj-row-padding>.lj-col {
+  padding: 0 8px;
+}
+.lj-row:after, .lj-row:before, .lj-row-padding:after, .lj-row-padding:before {
+  content: "";
+  display: table;
+  clear: both
+}
+.lj-col {
+  float: left;
+  width: 100%;
+}
+
+.lj-col.l1 {
+  width: 8.33333%;
+}
+.lj-col.l2 {
+  width: 16.66666%;
+}
+.lj-col.l3 {
+  width: 24.99999%;
+}
+.lj-col.l4 {
+  width: 33.33333%;
+}
+.lj-col.l5 {
+  width: 41.66666%;
+}
+.lj-col.l6 {
+  width: 49.99999%;
+}
+.lj-col.l7 {
+  width: 58.33333%;
+}
+.lj-col.l8 {
+  width: 66.66666%;
+}
+.lj-col.l9 {
+  width: 74.99999%;
+}
+.lj-col.l10 {
+  width: 83.33333%;
+}
+.lj-col.l11 {
+  width: 91.66666%;
+}
+.lj-col.l12 {
+  width: 99.99999%;
+}
+
+
+.lj.col-offset1 {
+  margin-left: 8.33333%;
+}
+.lj.col-offset2 {
+  margin-left: 16.66666%;
+}
+.lj.col-offset3 {
+  margin-left: 24.99999%;
+}
+.lj.col-offset4 {
+  margin-left: 33.33333%;
+}
+.lj.col-offset5 {
+  margin-left: 41.66666%;
+}
+.lj.col-offset6 {
+  margin-left: 49.99999%;
+}
+.lj.col-offset7 {
+  margin-left: 58.33333%;
+}
+.lj.col-offset8 {
+  margin-left: 66.66666%;
+}
+.lj.col-offset9 {
+  margin-left: 74.99999%;
+}
+.lj.col-offset10 {
+  margin-left: 83.33333%;
+}
+.lj.col-offset11 {
+  margin-left: 91.66666%;
+}
+.lj.col-offset12 {
+  margin-left: 99.99999%;
+}
+
+
+
+@media (max-width:993px) {
+  .lj-col.m1 {
+    width: 8.33333%;
+  }
+  .lj-col.m2 {
+    width: 16.66666%;
+  }
+  .lj-col.m3 {
+    width: 24.99999%;
+  }
+  .lj-col .m4 {
+    width: 33.33333%;
+  }
+  .lj-col.m5 {
+    width: 41.66666%;
+  }
+  .lj-col.m6 {
+    width: 49.99999%;
+  }
+  .lj-col.m7 {
+    width: 58.33333%;
+  }
+  .lj-col.m8 {
+    width: 66.66666%;
+  }
+  .lj-col.m9 {
+    width: 74.99999%;
+  }
+  .lj-col.m10 {
+    width: 83.33333%;
+  }
+  .lj-col.m11 {
+    width: 91.66666%;
+  }
+  .lj-col.m12 {
+    width: 99.99999%;
+  }
+}
+
+@media (max-width:600px) {
+  .lj-col.s1 {
+    width: 8.33333%;
+  }
+  .lj-col.s2 {
+    width: 16.66666%;
+  }
+  .lj-col.s3 {
+    width: 24.99999%;
+  }
+  .lj-col.s4 {
+    width: 33.33333%;
+  }
+  .lj-col.s5 {
+    width: 41.66666%;
+  }
+  .lj-col.s6 {
+    width: 49.99999%;
+  }
+  .lj-col.s7 {
+    width: 58.33333%;
+  }
+  .lj-col.s8 {
+    width: 66.66666%;
+  }
+  .lj-col.s9 {
+    width: 74.99999%;
+  }
+  .lj-col.s10 {
+    width: 83.33333%;
+  }
+  .lj-col.s11 {
+    width: 91.66666%;
+  }
+  .lj-col.s12 {
+    width: 99.99999%;
+  }
+
+}
