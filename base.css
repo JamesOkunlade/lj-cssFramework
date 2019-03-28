@@ -315,3 +315,39 @@ a:active {
   }
 
 }
+
+
+/* 
+ // for medium sized screens
+    @media only screen and (max-width: 768px) {
+      @for $i from 1 through 12 {
+        .col-md-#{$i} {
+          width: $col-size * $i;
+          // padding: 1%;
+        }
+
+        .offset-md-#{$i} {
+          margin-left: $col-size * $i;
+        }
+      }
+    }
+
+    // for small sized screens
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+
+      @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+          width: $col-size * $i;
+          // padding: 1%;
+        }
+
+        .offset-sm-#{$i} {
+          margin-left: $col-size * $i;
+        }
+      }
+    }
+  }
+}
+
+ */
